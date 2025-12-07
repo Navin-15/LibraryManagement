@@ -1,0 +1,41 @@
+/* Page Background */
+.login-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  padding: 20px;
+}
+
+/* Card Styling */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 12px !important;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Title */
+.login-title {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* Login Button */
+.login-btn {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,10 @@
+.parent{
+    width: 80.4%;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+.managebooks{
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    background-color: whitesmoke;
+}

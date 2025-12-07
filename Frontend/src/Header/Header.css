@@ -1,0 +1,17 @@
+.header {
+  background-color: #2d3e50;
+  width: 80.5%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}

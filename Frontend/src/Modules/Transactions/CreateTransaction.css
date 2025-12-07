@@ -1,0 +1,86 @@
+.transaction-form-container {
+  width: 650px;
+  margin: 40px 0px 0px 27rem;
+  background-color: #ffffff;
+  padding: 40px 45px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parenttransaction {
+  margin-top: 58px;
+  margin-bottom: -25px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  background-color: whitesmoke;
+}
+
+.transaction-form-container h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+.transaction-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.transaction-form .required {
+  color: red;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .transaction-form-container {
+    padding: 25px 20px;
+    margin: 20px;
+  }
+}

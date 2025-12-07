@@ -1,0 +1,133 @@
+/* .manage-transaction-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.table-header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.action-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-btn.delete {
+  color: #e74c3c;
+}
+.icon-btn.pdf {
+  color: #c0392b;
+}
+.icon-btn.excel {
+  color: #27ae60;
+}
+
+.icon-btn:hover {
+  transform: scale(1.15);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.transaction-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.selected-row {
+  background-color: #f0f8ff;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.status-badge.issued {
+  background: #dff9fb;
+  color: #22a6b3;
+}
+.status-badge.returned {
+  background: #eafaf1;
+  color: #27ae60;
+}
+.status-badge.overdue {
+  background: #fdecea;
+  color: #e74c3c;
+} */
+
+
+.parentdiv {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.managetransaction {
+  background-color: whitesmoke;
+}
+
+.table thead th {
+  background-color: #212529;
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.badge {
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.btn {
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+}
+
+.btn svg {
+  font-size: 1rem;
+}

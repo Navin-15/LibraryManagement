@@ -1,0 +1,141 @@
+/* .manage-staff-container {
+  padding: 30px;
+  background: #f8f9fc;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.actions button {
+  margin-left: 10px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.pdf-btn {
+  background-color: #f39c12;
+}
+.pdf-btn:hover {
+  background-color: #d68910;
+}
+
+.excel-btn {
+  background-color: #27ae60;
+}
+.excel-btn:hover {
+  background-color: #1e8449;
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.staff-table th,
+.staff-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.staff-table th {
+  background: #2c3e50;
+  color: #fff;
+  font-weight: 500;
+}
+
+.staff-table tr:hover {
+  background: #f2f3f5;
+}
+
+.selected-row {
+  background-color: #d6eaf8 !important;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+} */
+
+
+.parentdiv {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  width: 80.4%;
+  position: absolute;
+  right: 0px;
+  top: 12px;
+}
+.parentmanagestaff {
+  background-color: whitesmoke;
+}
+
+.table-dark th {
+  background-color: #343a40 !important;
+  color: #fff;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b !important;
+}
+
+.btn-success:hover {
+  background-color: #218838 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268 !important;
+}
+
+.selected-row {
+  background-color: #cfe2ff !important;
+}
+
+.no-data {
+  font-style: italic;
+}
+
+
+
+
