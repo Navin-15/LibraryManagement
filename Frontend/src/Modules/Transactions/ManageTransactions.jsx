@@ -472,7 +472,7 @@ const ManageTransactions = () => {
   // Fetch transactions
   const fetchTransactions = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/transactions");
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/transactions`);
       setTransactions(res.data);
       setFilteredTransactions(res.data);
     } catch (err) {
@@ -527,7 +527,7 @@ const ManageTransactions = () => {
     try {
       await Promise.all(
         selected.map((id) =>
-          axios.delete(`http://localhost:5000/api/transactions/${id}`)
+          axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/transactions/${id}`)
         )
       );
       alert("Selected transactions deleted successfully!");

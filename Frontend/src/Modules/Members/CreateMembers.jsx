@@ -241,7 +241,7 @@ const CreateMember = () => {
     if (validate()) {
       try {
         const newMember = { memberId, ...formData };
-        await axios.post("http://localhost:5000/api/members", newMember);
+        await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/members`, newMember);
         alert("✅ Member Created Successfully!");
         console.log("Saved Member:", newMember);
 

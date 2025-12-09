@@ -65,11 +65,10 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 
-// mongoose.connect("mongodb://127.0.0.1:27017/libraryDB"
-
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+// mongoose.connect("mongodb://127.0.0.1:27017/libraryDB", {
+// useNewUrlParser: true,
+// useUnifiedTopology: true,})
+mongoose.connect("mongodb+srv://naveenidrish203_db_user:naveenidrish203@cluster0.rqovo37.mongodb.net/libraryDB?appName=Cluster0", {
 })
 .then(() => console.log("MongoDB connected"))
 .catch((err) => console.error(err));
@@ -82,5 +81,5 @@ app.use("/api/transactions", transactionRoutes);
 app.use("/api/staff", staffRoutes);
 
 // Start server
-const PORT = process.env.PORT;
+const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

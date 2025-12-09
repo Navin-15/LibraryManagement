@@ -460,8 +460,8 @@ const CreateTransaction = () => {
     const fetchData = async () => {
       try {
         const [membersRes, booksRes] = await Promise.all([
-          axios.get("http://localhost:5000/api/members"),
-          axios.get("http://localhost:5000/api/books"),
+          axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/members`),
+          axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/books`),
         ]);
         setMembers(membersRes.data);
         setBooks(booksRes.data);
@@ -563,7 +563,7 @@ const CreateTransaction = () => {
 
         if (existingTransaction) {
           await axios.put(
-            `http://localhost:5000/api/transactions/${existingTransaction._id}`,
+            `${process.env.REACT_APP_BACKEND_URL}/api/transactions/${existingTransaction._id}`,
             payload
           );
           alert("Transaction Updated Successfully ✅");
@@ -571,7 +571,7 @@ const CreateTransaction = () => {
           // Ensure newly created transaction is issued and fine is 0
           payload.status = "Issued";
           payload.fineAmount = 0;
-          await axios.post("http://localhost:5000/api/transactions", payload);
+          await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/transactions`, payload);
           alert("Transaction Created Successfully ✅");
         }
 

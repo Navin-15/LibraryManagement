@@ -822,7 +822,7 @@ const ManageStaff = () => {
 
   const fetchStaff = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/staff");
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/staff`);
       setStaffList(response.data);
     } catch (error) {
       console.error("Error fetching staff:", error);
@@ -855,7 +855,7 @@ const ManageStaff = () => {
     try {
       await Promise.all(
         selectedStaff.map((id) =>
-          axios.delete(`http://localhost:5000/api/staff/${id}`)
+          axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/staff/${id}`)
         )
       );
       alert("🗑️ Selected staff deleted successfully!");

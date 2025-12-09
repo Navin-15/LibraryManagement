@@ -561,7 +561,7 @@ const CreateStaff = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post("http://localhost:5000/api/staff", {
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/staff`, {
           staffId,
           name: formData.name,
           email: formData.email,

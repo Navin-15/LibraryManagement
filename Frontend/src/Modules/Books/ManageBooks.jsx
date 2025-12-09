@@ -574,7 +574,7 @@ const ManageBooks = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/books");
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/books`);
       setBooks(res.data);
     } catch (err) {
       console.error("Error fetching books:", err);
@@ -596,7 +596,7 @@ const ManageBooks = () => {
     }
     if (window.confirm("Are you sure you want to delete the selected books?")) {
       try {
-        await axios.delete("http://localhost:5000/api/books", {
+        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/books`, {
           data: { ids: selectedBooks },
         });
         fetchBooks();
