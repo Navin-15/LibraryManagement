@@ -193,7 +193,7 @@ import { FaTrashAlt, FaFilePdf, FaFileExcel } from "react-icons/fa";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import * as XLSX from "xlsx";
-import "../Members/ManageMembers.css";
+import "./ManageMembers.css";
 import TopBar from '../../Topbar/TopBar'
 
 const ManageMembers = () => {
